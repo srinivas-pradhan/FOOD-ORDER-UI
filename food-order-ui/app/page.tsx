@@ -6,7 +6,7 @@ export default function Home() {
       h-screen
       justify-center
       items-center
-      text-teal-500/10 
+      text-sky-200/20
       xl:text-6xl
       md:text-4xl
       sm:text-2xl
