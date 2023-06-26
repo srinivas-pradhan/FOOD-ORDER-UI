@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <div className="text-black-700 text-2xl">Hello Hungry People!</div>
+    <div className="text-lime-600 text-3xl">Hello Hungry People!</div>
   )
 }
