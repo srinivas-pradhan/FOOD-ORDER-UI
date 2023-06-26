@@ -1,5 +1,6 @@
 import './globals.css'
 import { Prompt } from 'next/font/google'
+import ClientOnly from './components/ClientOnly'
 
 const inter = Prompt({ 
   weight: '400',
@@ -19,6 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ClientOnly>
+
+        </ClientOnly>
         {children}
       </body>
     </html>
