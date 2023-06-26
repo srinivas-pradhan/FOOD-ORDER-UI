@@ -13,7 +13,7 @@ export default function Home() {
       text-xl
       "
     >
-      🎉
+      🎉 Hello Hungry People 🎉
     </div>
   )
 }
