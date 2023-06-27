@@ -1,13 +1,14 @@
 'use client';
 
 import Container from "../Container";
+import Logo from "./Logo";
 
 
 const NavBar = () => {
     return ( 
         <div
             className="
-            fixed 
+            relative 
             w-full 
             bg-sky-200	
             hover:bg-sky-300 
@@ -31,7 +32,8 @@ const NavBar = () => {
                             md:gap-0
                         "
                     >
-                        <div>Hello World</div>
+                        <Logo/>
+                        <div>Yeah</div>
                     </div>
                 </Container>
             </div>
