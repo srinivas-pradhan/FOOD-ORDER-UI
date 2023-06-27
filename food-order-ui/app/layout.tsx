@@ -1,6 +1,7 @@
 import './globals.css'
 import { Prompt } from 'next/font/google'
 import ClientOnly from './components/ClientOnly'
+import NavBar from './components/NavBar/NavBar'
 
 const inter = Prompt({ 
   weight: '400',
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ClientOnly>
-
+            <NavBar/>
         </ClientOnly>
         {children}
       </body>
