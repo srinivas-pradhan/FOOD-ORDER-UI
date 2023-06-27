@@ -10,7 +10,7 @@ const NavBar = () => {
             fixed 
             w-full 
             bg-sky-200	
-            hover:bg-sky-800 
+            hover:bg-sky-500 
             z-10 
             shadow-sm"
         >
