@@ -13,7 +13,8 @@ const NavBar = () => {
             bg-sky-200	
             hover:bg-sky-300 
             z-10 
-            shadow-sm"
+            shadow-sm
+            "
         >
             <div 
                 className="
@@ -29,6 +30,7 @@ const NavBar = () => {
                             items-center
                             justify-between
                             gap-3
+                            h-4
                             md:gap-0
                         "
                     >
