@@ -10,8 +10,7 @@ const NavBar = () => {
             className="
             relative 
             w-full 
-            bg-sky-200	
-            hover:bg-sky-300 
+            bg-sky-300	
             z-10 
             shadow-sm
             "
@@ -34,8 +33,47 @@ const NavBar = () => {
                             md:gap-0
                         "
                     >
+                        <div
+                            className="
+                               px-4
+                               text-emerald-950
+                               hover:text-red-800
+                               transition
+                               font-semibold
+                               cursor-pointer
+                            "
+                        >Our Story</div>
+                        <div
+                            className="
+                               px-4
+                               text-emerald-950
+                               hover:text-red-800
+                               transition
+                               font-semibold
+                               cursor-pointer
+                            "
+                        >Menu</div>
                         <Logo/>
-                        <div>Yeah</div>
+                        <div
+                            className="
+                               px-4
+                               text-emerald-950
+                               hover:text-red-800
+                               transition
+                               font-semibold
+                               cursor-pointer
+                            "
+                        >Franchising</div>
+                        <div
+                            className="
+                               px-4
+                               text-emerald-950
+                               hover:text-red-800
+                               transition
+                               font-semibold
+                               cursor-pointer
+                            "
+                        >Feedback</div>
                     </div>
                 </Container>
             </div>
