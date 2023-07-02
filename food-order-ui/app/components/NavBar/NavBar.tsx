@@ -36,42 +36,42 @@ const NavBar = () => {
                         <div
                             className="
                                px-4
+                               py-3
                                text-emerald-950
                                hover:text-red-800
-                               transition
                                font-semibold
                                cursor-pointer
                             "
                         >Our Story</div>
                         <div
                             className="
-                               px-4
-                               text-emerald-950
-                               hover:text-red-800
-                               transition
-                               font-semibold
-                               cursor-pointer
+                                px-4
+                                py-3
+                                text-emerald-950
+                                hover:text-red-800
+                                font-semibold
+                                cursor-pointer
                             "
                         >Menu</div>
                         <Logo/>
                         <div
                             className="
-                               px-4
-                               text-emerald-950
-                               hover:text-red-800
-                               transition
-                               font-semibold
-                               cursor-pointer
+                                px-4
+                                py-3
+                                text-emerald-950
+                                hover:text-red-800
+                                font-semibold
+                                cursor-pointer
                             "
                         >Franchising</div>
                         <div
                             className="
-                               px-4
-                               text-emerald-950
-                               hover:text-red-800
-                               transition
-                               font-semibold
-                               cursor-pointer
+                                px-4
+                                py-3
+                                text-emerald-950
+                                hover:text-red-800
+                                font-semibold
+                                cursor-pointer
                             "
                         >Feedback</div>
                     </div>
