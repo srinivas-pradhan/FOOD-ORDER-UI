@@ -10,14 +10,13 @@ const NavBar = () => {
             className="
             relative 
             w-full 
-            bg-sky-300	
-            z-10 
+            bg-slate-100	
             shadow-sm
             "
         >
             <div 
                 className="
-                    py-4
+                    py-10
                     border-b-[1px]
                 "
             >
