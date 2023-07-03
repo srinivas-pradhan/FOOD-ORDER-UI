@@ -2,6 +2,8 @@
 
 import Container from "../Container";
 import Logo from "./Logo";
+import { FaFacebookF, FaInstagram, FaTiktok} from 'react-icons/fa';
+
 
 
 const NavBar = () => {
@@ -16,16 +18,44 @@ const NavBar = () => {
         >
             <div
                 className="
-                    py-auto
+                    flex
+                    items-center
+                    py-2
                     border-b-[1px]
-                    bg-stone-400
-                    hover:bg-stone-600
-                    text-emerald-950
-                    hover:text-zinc-50
-                    text-center
+                    bg-orange-100
                 "
             >
-                Location and Information Here
+                <div className="
+                    px-60 
+                    cursor-pointer
+                    text-emerald-950
+                    hover:text-red-800
+                    "
+                >
+                    Location Information Here
+                </div>
+                <div
+                    className="
+                        px-40 
+                        flex
+                        flex-grow
+                        justify-end
+                        gap-2
+                    "
+                >
+                    <a className="text-emerald-950 hover:text-red-800"
+                        href="https://www.facebook.com/">
+                        <FaFacebookF size="1.5rem"/>
+                    </a>
+                    <a className="text-emerald-950 hover:text-red-800"
+                        href="https://www.instagram.com/x">
+                        <FaInstagram size="1.5rem"/>
+                    </a>
+                    <a className="text-emerald-950 hover:text-red-800"
+                        href="https://www.tiktok.com">
+                        <FaTiktok size="1.5rem"/>
+                    </a>
+                </div>
             </div>
             <div 
                 className="
@@ -65,6 +95,17 @@ const NavBar = () => {
                                 cursor-pointer
                             "
                         >Menu</div>
+                        <button data-dropdown-toggle="dropdown">tu</button>
+                        <div
+                            className="
+                                px-4
+                                py-3
+                                text-emerald-950
+                                hover:text-red-800
+                                font-semibold
+                                cursor-pointer
+                            "
+                        >Catering</div>
                         <Logo/>
                         <div
                             className="
