@@ -1,8 +1,10 @@
 'use client';
 
 import Container from "../Container";
-import Logo from "./Logo";
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
+import Logo from "./Logo";
+import MenuItem from "./MenuItem";
+import SocialIcons from "./SocialIcons";
 
 
 
@@ -34,28 +36,7 @@ const NavBar = () => {
                 >
                     Location Information Here
                 </div>
-                <div
-                    className="
-                        px-40 
-                        flex
-                        flex-grow
-                        justify-end
-                        gap-2
-                    "
-                >
-                    <a className="text-emerald-950 hover:text-red-800"
-                        href="https://www.facebook.com/">
-                        <FaFacebookF size="1.5rem"/>
-                    </a>
-                    <a className="text-emerald-950 hover:text-red-800"
-                        href="https://www.instagram.com/x">
-                        <FaInstagram size="1.5rem"/>
-                    </a>
-                    <a className="text-emerald-950 hover:text-red-800"
-                        href="https://www.tiktok.com">
-                        <FaTiktok size="1.5rem"/>
-                    </a>
-                </div>
+                <SocialIcons />
             </div>
             <div 
                 className="
@@ -70,64 +51,34 @@ const NavBar = () => {
                             flex-row
                             sticky
                             items-center
-                            justify-center
+                            justify-between
                             gap-3
                             h-4
                             space-x-6
                             md:gap-0
                         "
                     >
-                        <div
-                            className="
-                               px-4
-                               py-3
-                               text-emerald-950
-                               hover:text-red-800
-                               font-semibold
-                               cursor-pointer
-                            "
-                        >Our Story</div>
-                        <div
-                            className="
-                                px-4
-                                py-3
-                                text-emerald-950
-                                hover:text-red-800
-                                font-semibold
-                                cursor-pointer
-                            "
-                        >Menu</div>
-                        <div
-                            className="
-                                px-4
-                                py-3
-                                text-emerald-950
-                                hover:text-red-800
-                                font-semibold
-                                cursor-pointer
-                            "
-                        >Catering</div>
                         <Logo/>
-                        <div
-                            className="
-                                px-4
-                                py-3
-                                text-emerald-950
-                                hover:text-red-800
-                                font-semibold
-                                cursor-pointer
-                            "
-                        >Franchising</div>
-                        <div
-                            className="
-                                px-4
-                                py-3
-                                text-emerald-950
-                                hover:text-red-800
-                                font-semibold
-                                cursor-pointer
-                            "
-                        >Feedback</div>
+                        <MenuItem 
+                            onClick={() => {}}
+                            label="Our Story"
+                        />
+                        <MenuItem 
+                            onClick={() => {}}
+                            label="Menu"
+                        />
+                        <MenuItem 
+                            onClick={() => {}}
+                            label="Catering"
+                        />
+                        <MenuItem 
+                            onClick={() => {}}
+                            label="Franchising"
+                        />
+                        <MenuItem 
+                            onClick={() => {}}
+                            label="Feedback"
+                        />
                     </div>
                 </Container>
             </div>
