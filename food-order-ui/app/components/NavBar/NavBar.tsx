@@ -29,7 +29,7 @@ const NavBar = () => {
             </div>
             <div 
                 className="
-                    py-20
+                    py-16
                     border-b-[1px]
                 "
             >
