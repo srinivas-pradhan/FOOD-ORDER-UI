@@ -12,9 +12,6 @@ class SocialIcons extends Component {
                     lg:px-20
                     md:px-10
                     px-4
-                    xl:gap-2
-                    lg:gap-4
-                    md:gap-6
                     gap-8
                     flex
                     flex-grow
