@@ -14,9 +14,22 @@ const NavBar = () => {
             shadow-sm
             "
         >
+            <div
+                className="
+                    py-auto
+                    border-b-[1px]
+                    bg-stone-400
+                    hover:bg-stone-600
+                    text-emerald-950
+                    hover:text-zinc-50
+                    text-center
+                "
+            >
+                Location and Information Here
+            </div>
             <div 
                 className="
-                    py-10
+                    py-20
                     border-b-[1px]
                 "
             >
