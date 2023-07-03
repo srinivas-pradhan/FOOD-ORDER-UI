@@ -19,6 +19,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
                 text-emerald-950
                 hover:text-red-800
                 font-semibold
+                text-xl
                 cursor-pointer
             "
         >

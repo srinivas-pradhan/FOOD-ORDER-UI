@@ -10,8 +10,8 @@ const Logo = () => {
             onClick={() => Router.push('/')}
             alt="Logo"
             className="hidden md:block cursor-pointer"
-            height="150"
-            width="150"
+            height="200"
+            width="200"
             src="/images/figma.png"
         />
      );

@@ -5,6 +5,7 @@ import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 import Logo from "./Logo";
 import MenuItem from "./MenuItem";
 import SocialIcons from "./SocialIcons";
+import LocationSelect from './LocationSelect';
 
 
 
@@ -21,21 +22,17 @@ const NavBar = () => {
             <div
                 className="
                     flex
+                    flex-row
                     items-center
                     py-2
                     border-b-[1px]
                     bg-orange-100
                 "
             >
-                <div className="
-                    px-60 
-                    cursor-pointer
-                    text-emerald-950
-                    hover:text-red-800
-                    "
-                >
-                    Location Information Here
-                </div>
+                <LocationSelect 
+                    label="Location Information Here"
+                    onClick={ ()=> {} }
+                />
                 <SocialIcons />
             </div>
             <div 

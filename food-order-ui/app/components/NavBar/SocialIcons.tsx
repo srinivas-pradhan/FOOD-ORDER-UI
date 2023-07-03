@@ -8,24 +8,30 @@ class SocialIcons extends Component {
         return ( 
             <div
                 className="
-                    px-40 
+                    xl:px-40
+                    lg:px-20
+                    md:px-10
+                    px-4
+                    xl:gap-2
+                    lg:gap-4
+                    md:gap-6
+                    gap-8
                     flex
                     flex-grow
                     justify-end
-                    gap-2
                 "    
             >
                 <a className="text-emerald-950 hover:text-red-800"
                     href="https://www.facebook.com/">
-                    <FaFacebookF size="1.5rem"/>
+                    <FaFacebookF size="1rem"/>
                 </a>
                 <a className="text-emerald-950 hover:text-red-800"
                         href="https://www.instagram.com/">
-                    <FaInstagram size="1.5rem"/>
+                    <FaInstagram size="1rem"/>
                 </a>
                 <a className="text-emerald-950 hover:text-red-800"
                         href="https://www.tiktok.com">
-                        <FaTiktok size="1.5rem"/>
+                        <FaTiktok size="1rem"/>
                 </a>
             </div>
     )}
