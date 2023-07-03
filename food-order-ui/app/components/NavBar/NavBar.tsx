@@ -2,7 +2,7 @@
 
 import Container from "../Container";
 import Logo from "./Logo";
-import { FaFacebookF, FaInstagram, FaTiktok} from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 
 
@@ -68,10 +68,12 @@ const NavBar = () => {
                         className="
                             flex
                             flex-row
+                            sticky
                             items-center
-                            justify-between
+                            justify-center
                             gap-3
                             h-4
+                            space-x-6
                             md:gap-0
                         "
                     >
