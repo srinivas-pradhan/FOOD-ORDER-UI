@@ -95,7 +95,6 @@ const NavBar = () => {
                                 cursor-pointer
                             "
                         >Menu</div>
-                        <button data-dropdown-toggle="dropdown">tu</button>
                         <div
                             className="
                                 px-4
