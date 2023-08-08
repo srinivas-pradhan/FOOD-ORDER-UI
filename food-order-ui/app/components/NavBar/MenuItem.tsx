@@ -15,7 +15,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
             onClick={onClick}
             className="
                 px-6
-                py-4
+                py-3
                 text-emerald-950
                 hover:text-red-800
                 font-semibold
