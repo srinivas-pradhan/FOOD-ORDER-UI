@@ -6,10 +6,17 @@ import Logo from "./Logo";
 import MenuItem from "./MenuItem";
 import SocialIcons from "./SocialIcons";
 import LocationSelect from './LocationSelect';
-
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { useState } from 'react';
 
 
 const NavBar = () => {
+    const [menuOpen, setmenuOpen] = useState(false);
+
+    const  handleNav = () => {
+        setmenuOpen(!menuOpen)
+    }
+
     return ( 
         <div
             className="
@@ -30,14 +37,14 @@ const NavBar = () => {
                 "
             >
                 <LocationSelect 
-                    label="Location Information Here"
+                    label="Location"
                     onClick={ ()=> {} }
                 />
                 <SocialIcons />
             </div>
             <div 
                 className="
-                    py-16
+                    py-8
                     border-b-[1px]
                 "
             >
@@ -55,29 +62,80 @@ const NavBar = () => {
                             md:gap-0
                         "
                     >
-                        <Logo/>
-                        <MenuItem 
-                            onClick={() => {}}
-                            label="Our Story"
+                        <Logo 
+                            height="100"
+                            width="100"
                         />
-                        <MenuItem 
-                            onClick={() => {}}
-                            label="Menu"
-                        />
-                        <MenuItem 
-                            onClick={() => {}}
-                            label="Catering"
-                        />
-                        <MenuItem 
-                            onClick={() => {}}
-                            label="Franchising"
-                        />
-                        <MenuItem 
-                            onClick={() => {}}
-                            label="Feedback"
-                        />
+                        <div className="hidden md:flex">
+                            <ul className="hidden md:flex">
+                                <MenuItem 
+                                onClick={() => {}}
+                                label="Our Story"
+                                />
+                                <MenuItem 
+                                    onClick={() => {}}
+                                    label="Menu"
+                                />
+                                <MenuItem 
+                                    onClick={() => {}}
+                                    label="Catering"
+                                />
+                                <MenuItem 
+                                    onClick={() => {}}
+                                    label="Franchising"
+                                />
+                                <MenuItem 
+                                    onClick={() => {}}
+                                    label="Feedback"
+                                />
+                            </ul>
+                        </div>
+                        <div onClick={handleNav}
+                            className="
+                                md:hidden
+                                cursor-pointer
+                                "   
+                        >
+                            <AiOutlineMenu size={35}/>
+                        </div>
                     </div>
                 </Container>
+                <div className={
+                        menuOpen
+                        ? "fixed w-56 left-0 top-0 md:hidden h-screen bg-slate-100 p-10 ease-in duration-500"
+                        : "fixed w-56 left-[-100%] top-0 p-10 ease-in duration-500"
+                    }
+                    >
+                    <div className="flex w-full items-center justify-end">
+                        <div onClick={handleNav} className="cursor-pointer">
+                            <AiOutlineClose size={35} />
+                        </div>
+                    </div>
+                    <div className="md:flex">
+                        <ul className="md:flex">
+                            <MenuItem 
+                                onClick={() => {}}
+                                label="Our Story"
+                            />
+                            <MenuItem 
+                                onClick={() => {}}
+                                label="Menu"
+                            />
+                            <MenuItem 
+                                onClick={() => {}}
+                                label="Catering"
+                            />
+                            <MenuItem 
+                                onClick={() => {}}
+                                label="Franchising"
+                            />
+                            <MenuItem 
+                                onClick={() => {}}
+                                label="Feedback"
+                            />
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
      );
