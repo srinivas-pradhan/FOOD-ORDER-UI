@@ -33,7 +33,7 @@ const NavBar = () => {
                     items-center
                     py-2
                     border-b-[1px]
-                    bg-orange-100
+                    bg-orange-200
                 "
             >
                 <LocationSelect 
@@ -66,8 +66,8 @@ const NavBar = () => {
                             height="100"
                             width="100"
                         />
-                        <div className="hidden md:flex">
-                            <ul className="hidden md:flex">
+                        <div className="hidden sm:flex">
+                            <ul className="hidden sm:flex">
                                 <MenuItem 
                                 onClick={() => {}}
                                 label="Our Story"
@@ -92,7 +92,7 @@ const NavBar = () => {
                         </div>
                         <div onClick={handleNav}
                             className="
-                                md:hidden
+                                sm:hidden
                                 cursor-pointer
                                 "   
                         >
@@ -102,8 +102,8 @@ const NavBar = () => {
                 </Container>
                 <div className={
                         menuOpen
-                        ? "fixed w-56 left-0 top-0 md:hidden h-screen bg-slate-100 p-10 ease-in duration-500"
-                        : "fixed w-56 left-[-100%] top-0 p-10 ease-in duration-500"
+                        ? "fixed w-56 left-0 top-0 sm:hidden h-screen bg-slate-100 p-10 ease-in duration-500"
+                        : "fixed w-56 left-[-100%] top-0 p-10 h-screen ease-in duration-500"
                     }
                     >
                     <div className="flex w-full items-center justify-end">
@@ -111,8 +111,8 @@ const NavBar = () => {
                             <AiOutlineClose size={35} />
                         </div>
                     </div>
-                    <div className="md:flex">
-                        <ul className="md:flex">
+                    <div className="sm:flex">
+                        <ul className="sm:flex">
                             <MenuItem 
                                 onClick={() => {}}
                                 label="Our Story"
