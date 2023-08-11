@@ -16,6 +16,12 @@ const MenuItem: React.FC<MenuItemProps> = ({
             className="
                 px-4
                 py-3
+                transition 
+                ease-in-out 
+                delay-15
+                hover:-translate-y-1 
+                hover:scale-110
+                duration-300
                 text-emerald-950
                 hover:text-red-800
                 font-semibold

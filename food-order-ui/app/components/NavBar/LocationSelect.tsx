@@ -25,7 +25,12 @@ const LocationSelect: React.FC<LocationSelectProps> = ({
                 text-emerald-950
                 hover:text-red-800
                 transition
-                gap-1
+                gap-1 
+                ease-in-out 
+                delay-15
+                hover:-translate-y-1 
+                hover:scale-110
+                duration-300
             "
         >
             <ImLocation size="1rem" /><span className="text-sm">{label}</span>

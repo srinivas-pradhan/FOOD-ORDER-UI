@@ -4,11 +4,11 @@ import Container from "../Container";
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 import Logo from "./Logo";
 import MenuItem from "./MenuItem";
+import OrderButton from "./OrderButton";
 import SocialIcons from "./SocialIcons";
 import LocationSelect from './LocationSelect';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
-
 
 const NavBar = () => {
     const [menuOpen, setmenuOpen] = useState(false);
@@ -59,15 +59,16 @@ const NavBar = () => {
                             gap-3
                             h-4
                             space-x-6
-                            md:gap-0
+                            lg:gap-0
                         "
                     >
                         <Logo 
                             height="100"
                             width="100"
                         />
-                        <div className="hidden sm:flex">
-                            <ul className="hidden sm:flex">
+                        <div className="hidden lg:flex">
+                            <ul className="hidden lg:flex">
+                            
                                 <MenuItem 
                                 onClick={() => {}}
                                 label="Our Story"
@@ -88,12 +89,23 @@ const NavBar = () => {
                                     onClick={() => {}}
                                     label="Feedback"
                                 />
+                                <OrderButton
+                                    onClick={() => {}}
+                                    label="Order Now"
+                                />
                             </ul>
                         </div>
                         <div onClick={handleNav}
                             className="
-                                sm:hidden
+                                lg:hidden
                                 cursor-pointer
+                                gap-1
+                                transition 
+                                ease-in-out 
+                                delay-15
+                                hover:-translate-y-1 
+                                hover:scale-110
+                                duration-300
                                 "   
                         >
                             <AiOutlineMenu size={35}/>
@@ -102,17 +114,27 @@ const NavBar = () => {
                 </Container>
                 <div className={
                         menuOpen
-                        ? "fixed w-56 left-0 top-0 sm:hidden h-screen bg-slate-100 p-10 ease-in duration-500"
+                        ? "fixed w-56 left-0 top-0 lg:hidden h-screen bg-slate-100 p-10 ease-in duration-500"
                         : "fixed w-56 left-[-100%] top-0 p-10 h-screen ease-in duration-500"
                     }
                     >
                     <div className="flex w-full items-center justify-end">
-                        <div onClick={handleNav} className="cursor-pointer">
+                        <div onClick={handleNav} className="
+                            cursor-pointer
+                            transition
+                            gap-1
+                            ease-in-out 
+                            delay-15
+                            hover:-translate-y-1 
+                            hover:scale-110
+                            duration-300
+                            "
+                            >
                             <AiOutlineClose size={35} />
                         </div>
                     </div>
-                    <div className="sm:flex">
-                        <ul className="sm:flex">
+                    <div className="lg:flex">
+                        <ul className="lg:flex">
                             <MenuItem 
                                 onClick={() => {}}
                                 label="Our Story"
@@ -133,6 +155,10 @@ const NavBar = () => {
                                 onClick={() => {}}
                                 label="Feedback"
                             />
+                            <OrderButton
+                                onClick={() => {}}
+                                label="Order Now"
+                            />  
                         </ul>
                     </div>
                 </div>

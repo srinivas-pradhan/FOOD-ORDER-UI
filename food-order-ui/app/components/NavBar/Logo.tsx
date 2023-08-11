@@ -17,7 +17,17 @@ const Logo:React.FC<LogoProps> = ({
         <Image
             onClick={() => Router.push('/')}
             alt="Logo"
-            className="md:block cursor-pointer"
+            className="
+                md:block 
+                cursor-pointer
+                transition
+                gap-1
+                ease-in-out 
+                delay-15
+                hover:-translate-y-1 
+                hover:scale-110
+                duration-300
+            "
             height={height}
             width={width}
             src="/images/figma.png"
