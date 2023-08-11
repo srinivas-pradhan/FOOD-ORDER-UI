@@ -6,6 +6,8 @@ import Logo from "./Logo";
 import MenuItem from "./MenuItem";
 import OrderButton from "./OrderButton";
 import SocialIcons from "./SocialIcons";
+import CallMe from "./CallMe";
+import Cart from "./Cart";
 import LocationSelect from './LocationSelect';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
@@ -93,6 +95,12 @@ const NavBar = () => {
                                     onClick={() => {}}
                                     label="Order Now"
                                 />
+                                <Cart 
+                                    onClick={() => {}}
+                                />
+                                <CallMe
+                                    onClick={() => {}}
+                                />
                             </ul>
                         </div>
                         <div onClick={handleNav}
@@ -159,6 +167,12 @@ const NavBar = () => {
                                 onClick={() => {}}
                                 label="Order Now"
                             />  
+                            <Cart 
+                                onClick={() => {}}
+                            />
+                            <CallMe
+                                onClick={() => {}}
+                            />
                         </ul>
                     </div>
                 </div>

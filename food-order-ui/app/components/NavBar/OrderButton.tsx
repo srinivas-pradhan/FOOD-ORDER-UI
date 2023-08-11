@@ -24,7 +24,7 @@ const OrderButton:React.FC<OrderButtonProps> = ({
                 px-4
                 m-2
                 bg-rose-950
-                text-neutral-200
+                text-neutral-300
                 hover:text-neutral-50
                 font-semibold
                 text-md
