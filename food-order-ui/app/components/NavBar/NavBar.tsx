@@ -8,7 +8,9 @@ import OrderButton from "./OrderButton";
 import SocialIcons from "./SocialIcons";
 import CallMe from "./CallMe";
 import Cart from "./Cart";
+import UserAuth from "./UserAuth";
 import LocationSelect from './LocationSelect';
+import UserMgmt from "./UserMgmt";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 
@@ -61,7 +63,9 @@ const NavBar = () => {
                             gap-3
                             h-4
                             space-x-6
+                            md:space-x-2
                             lg:gap-0
+                            text-lg
                         "
                     >
                         <Logo 
@@ -69,19 +73,22 @@ const NavBar = () => {
                             width="100"
                         />
                         <div className="hidden lg:flex">
-                            <ul className="hidden lg:flex">
-                            
-                                <MenuItem 
-                                onClick={() => {}}
-                                label="Our Story"
-                                />
+                            <ul className="
+                                hidden 
+                                lg:flex
+                                xl:text-lg
+                                lg:text-md
+                                md:text-sm
+                                sm:text-lg
+                                "
+                                >
                                 <MenuItem 
                                     onClick={() => {}}
                                     label="Menu"
                                 />
                                 <MenuItem 
                                     onClick={() => {}}
-                                    label="Catering"
+                                    label="Locations"
                                 />
                                 <MenuItem 
                                     onClick={() => {}}
@@ -91,16 +98,38 @@ const NavBar = () => {
                                     onClick={() => {}}
                                     label="Feedback"
                                 />
-                                <OrderButton
-                                    onClick={() => {}}
-                                    label="Order Now"
-                                />
+                                <div className="
+                                    xl:text-lg
+                                    lg:text-md
+                                    md:text-sm
+                                    sm:text-lg
+                                "
+                                >
+                                    <OrderButton
+                                        onClick={() => {}}
+                                        label="Order Now"
+                                    />
+                                </div>
                                 <Cart 
                                     onClick={() => {}}
                                 />
                                 <CallMe
                                     onClick={() => {}}
                                 />
+                                <div className="
+                                    xl:text-lg
+                                    lg:text-md
+                                    md:text-sm
+                                    sm:text-lg
+                                "
+                                >
+                                    <UserAuth
+                                        onClick={() => {}}
+                                    />
+                                    <UserMgmt
+                                        onClick={() => {}}
+                                    />
+                                </div>
                             </ul>
                         </div>
                         <div onClick={handleNav}
@@ -145,15 +174,11 @@ const NavBar = () => {
                         <ul className="lg:flex">
                             <MenuItem 
                                 onClick={() => {}}
-                                label="Our Story"
-                            />
-                            <MenuItem 
-                                onClick={() => {}}
                                 label="Menu"
                             />
                             <MenuItem 
                                 onClick={() => {}}
-                                label="Catering"
+                                label="Locations"
                             />
                             <MenuItem 
                                 onClick={() => {}}
@@ -171,6 +196,12 @@ const NavBar = () => {
                                 onClick={() => {}}
                             />
                             <CallMe
+                                onClick={() => {}}
+                            />
+                            <UserAuth
+                                onClick={() => {}}
+                            />
+                            <UserMgmt
                                 onClick={() => {}}
                             />
                         </ul>

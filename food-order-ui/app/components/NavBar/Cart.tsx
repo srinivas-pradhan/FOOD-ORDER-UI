@@ -2,7 +2,7 @@
 import { FaCartArrowDown } from "react-icons/fa";
 
 interface CartProps {
-    onClick: () => void;
+    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 

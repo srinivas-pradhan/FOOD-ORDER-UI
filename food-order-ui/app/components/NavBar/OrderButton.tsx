@@ -10,7 +10,7 @@ const OrderButton:React.FC<OrderButtonProps> = ({
     label
 }) => {
     return ( 
-        <button 
+        <button onClick={onClick}
             className="
                 rounded-full
                 transition 
@@ -19,15 +19,16 @@ const OrderButton:React.FC<OrderButtonProps> = ({
                 hover:-translate-y-1 
                 hover:scale-110
                 duration-300
-                resize
                 h-10 
                 px-4
-                m-2
-                bg-rose-950
-                text-neutral-300
-                hover:text-neutral-50
+                m-1
+                md:m-2
+                border-solid
+                border-2
+               border-rose-950
+                text-emerald-950 
+                hover:text-red-800
                 font-semibold
-                text-md
                 cursor-pointer
             "
         >

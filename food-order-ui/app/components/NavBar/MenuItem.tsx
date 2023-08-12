@@ -1,7 +1,9 @@
 'use client';
+import React from "react";
+
 
 interface MenuItemProps {
-    onClick: () => void;
+    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
     label: string;
 };
 
@@ -16,6 +18,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
             className="
                 px-4
                 py-3
+                md:py-4
                 transition 
                 ease-in-out 
                 delay-15
@@ -25,7 +28,10 @@ const MenuItem: React.FC<MenuItemProps> = ({
                 text-emerald-950
                 hover:text-red-800
                 font-semibold
-                text-lg
+                xl:text-lg
+                lg:text-md
+                md:text-sm
+                sm:text-xl
                 cursor-pointer
             "
         >

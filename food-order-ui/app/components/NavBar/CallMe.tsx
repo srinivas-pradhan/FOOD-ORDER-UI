@@ -3,7 +3,7 @@
 import { FaPhone } from "react-icons/fa";
 
 interface CallMeProps {
-    onClick: () => void;
+    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const CallMe: React.FC<CallMeProps> = (
