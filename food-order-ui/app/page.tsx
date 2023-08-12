@@ -2,7 +2,8 @@ export default function Home() {
   return (
     <div 
     className="
-      flex 
+      flex
+      flex-col
       h-screen
       justify-center
       items-center
@@ -13,7 +14,6 @@ export default function Home() {
       text-xl
       "
     >
-      👀 Hello Hungry People 👀
     </div>
   )
 }
