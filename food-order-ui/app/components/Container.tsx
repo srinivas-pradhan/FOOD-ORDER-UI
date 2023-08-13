@@ -11,6 +11,8 @@ const Container: React.FC<ContainerProps>= ({
     <div
         className="
             max-w-[2520px]
+            container
+            grid
             mx-auto
             xl:px-20
             md:px-10

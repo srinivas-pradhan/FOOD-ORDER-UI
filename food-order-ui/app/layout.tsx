@@ -24,18 +24,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <ClientOnly>
             <NavBar/>
-            <div className="
-              flex 
-              flex-col 
-              min-0
-              p-0
-              m-0
-              h-full
-              overflow-hidden
-            "
-            >
-              Body
-            </div>
             <Footer/>
         </ClientOnly>
         {children}
