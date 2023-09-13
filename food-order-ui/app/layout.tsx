@@ -3,6 +3,7 @@ import { Prompt } from 'next/font/google'
 import ClientOnly from './components/ClientOnly'
 import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
+import { Main } from 'next/document'
 
 const inter = Prompt({ 
   weight: '400',

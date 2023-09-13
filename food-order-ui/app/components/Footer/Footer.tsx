@@ -33,10 +33,10 @@ const Footer = () => {
                 "
                 >
                     <Logo 
-                        height="50"
-                        width="50"
+                        height="75"
+                        width="75"
                     />
-                    <SocialIcons />
+                    {/* <SocialIcons /> */}
             </div>
             <div className="
                 flex
@@ -108,9 +108,9 @@ const Footer = () => {
                 <Cart 
                     onClick={() => {}}
                 />
-                <CallMe
+                {/* <CallMe
                     onClick={() => {}}
-                />
+                /> */}
                 <MenuItem 
                     onClick={() => {}}
                     label="Menu"
